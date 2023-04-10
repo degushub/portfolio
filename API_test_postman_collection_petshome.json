@@ -1,0 +1,1864 @@
+{
+	"info": {
+		"_postman_id": "5f842753-bbeb-4c3b-a086-85fd8c21b981",
+		"name": "HW_10.7.6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25380282"
+	},
+	"item": [
+		{
+			"name": "N1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кошка&breed__code=crocodile&gender__code=wait_home&age=0",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=german_shepherd&age=0",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кот&breed__code=german_shepherd&gender__code=wait_home&age=1",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кошка&breed__code=pitbull&age=1",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&gender__code=f&age=1",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=попугай&breed__code=indian&gender__code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&breed__code=cockatiel&gender__code=f&age=1",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Герой&breed__code=crocodile&gender__code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кошка&breed__code=indian&gender__code=f&age=2",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=cockatiel&gender__code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=попугай&breed__code=crocodile&gender__code=f&age=2",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&breed__code=german_shepherd&gender__code=m&age=2",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Герой&breed__code=pitbull&gender__code=wait_home&age=2",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кот&age=2",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N15",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=german_shepherd&gender__code=f",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N16",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=попугай&breed__code=pitbull&gender__code=m",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N17",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=попугай&breed__code=pitbull&gender__code=m&age=",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N18",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Герой&breed__code=indian",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N19",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кот&breed__code=cockatiel&gender__code=f",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N20",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кошка&breed__code=crocodile&gender__code=m",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N21",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=попугай&breed__code=indian&gender__code=wait_home&age=0",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N22",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&breed__code=cockatiel&age=0",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N23",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Герой&breed__code=crocodile&gender__code=f&age=0",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Герой"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N24",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кот\n&breed__code=german_shepherd&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот\n"
+						},
+						{
+							"key": "breed__code",
+							"value": "german_shepherd"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N25",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кошка&breed__code=pitbull&gender__code=f&age=0",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "pitbull"
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N26",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N27",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&gender__code=m&age=0",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N28",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кот&gender__code=f&age=1",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кот"
+						},
+						{
+							"key": "breed__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gender__code",
+							"value": "f"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N29",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=кошка&breed__code=indian&gender__code=m&age=1",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "кошка"
+						},
+						{
+							"key": "breed__code",
+							"value": "indian"
+						},
+						{
+							"key": "gender__code",
+							"value": "m"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N30",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=Обезьянка&breed__code=cockatiel&gender__code=wait_home&age=1",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "Обезьянка"
+						},
+						{
+							"key": "breed__code",
+							"value": "cockatiel"
+						},
+						{
+							"key": "gender__code",
+							"value": "wait_home"
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "N31",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{base_url}}/api/pet/?page=1&page_size=6&species__name=попугай&breed__code=crocodile&age=1",
+					"protocol": "http",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"pet",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "6"
+						},
+						{
+							"key": "species__name",
+							"value": "попугай"
+						},
+						{
+							"key": "breed__code",
+							"value": "crocodile"
+						},
+						{
+							"key": "gender__code",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "51.250.89.234"
+		}
+	]
+}
